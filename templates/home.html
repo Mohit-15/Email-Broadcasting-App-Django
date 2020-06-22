@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<a href="details">Add Email to list</a><br>
+	<a href="sendmsg">Send Broadcast Message</a><br>
+	<a href="logout">Logout</a><br>
+
+	<center>
+		<h3>Thank You </h3>
+	</center>
+
+	<div>
+		{% for msg in messages %}
+			{{msg}}
+		{% endfor %}
+	</div>
+</body>
+</html>
