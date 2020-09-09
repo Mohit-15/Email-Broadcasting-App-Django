@@ -2,17 +2,20 @@
 <html>
 <head>
 	<title>Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+	<center>
 	<form method="post">
 		{% csrf_token %}
 	<div>
-		Username:         <input type="text" name="username" placeholder="Username"><br>
-		First Name:       <input type="text" name="first_name" placeholder="First Name"><br>
-		Last Name:        <input type="text" name="last_name" placeholder="Last Name"><br>
-		Email:            <input type="text" name="email" placeholder="Email"><br>
-		Password:         <input type="password" name="password1" placeholder="Password"><br>
-		Confirm Password: <input type="password" name="password2" placeholder="Confirm Password"><br>
+		<br>
+		<b>Username:       </b>  <input type="text" name="username" placeholder="Username"><br><br>
+		<b>First Name:    </b>   <input type="text" name="first_name" placeholder="First Name"><br><br>
+		<b>Last Name:     </b>   <input type="text" name="last_name" placeholder="Last Name"><br><br>
+		<b>Email:         </b>   <input type="text" name="email" placeholder="Email"><br><br>
+		<b>Password:      </b>   <input type="password" name="password1" placeholder="Password"><br><br>
+		<b>Confirm Password:</b> <input type="password" name="password2" placeholder="Confirm Password"><br><br>
 
 		<input type="submit"><br>
 
@@ -24,6 +27,9 @@
 			{{msg}}
 		{% endfor %}
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</center><br>
 </body>
 </html>
